@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始浏览
-      link: /intro/关于本站
+      link: /TubaTools深度学习课程/
     - theme: alt
       text: 访问博客
       link: https://starrymiku.com

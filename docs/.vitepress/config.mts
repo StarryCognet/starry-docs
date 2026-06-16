@@ -76,11 +76,11 @@ export default defineConfig({
        * For detailed instructions, see the links below:
        * https://vitepress-sidebar.jooy2.com/guide/api
        */
-      documentRootPath: '/docs', //文档根目录路径
+      documentRootPath: './docs', //文档根目录路径
       // scanStartPath: null, // 扫描开始路径，设为null则默认从documentRootPath开始
       // resolvePath: null, // 解析路径，用于解决相对路径
       // useTitleFromFileHeading: true, // 是否使用文件标题作为菜单标题
-      // useTitleFromFrontmatter: true, // 是否使用frontmatter中的title作为菜单标题
+      useTitleFromFrontmatter: true, // 是否使用frontmatter中的title作为菜单标题
       // frontmatterTitleFieldName: 'title', // frontmatter中标题字段的名称
       // useFolderTitleFromIndexFile: false, //是否使用层级首页文件名做分级标题
       // useFolderLinkFromIndexFile: false, //是否链接至层级首页文件
