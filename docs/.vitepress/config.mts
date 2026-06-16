@@ -8,6 +8,8 @@ export default defineConfig({
   description: "StarryMikuDocs - 个人知识沉淀，长篇教程与技术笔记",
   // 添加 lastUpdated 配置
   lastUpdated: true,
+  // 忽略死链检查（README 中的本地地址等）
+  ignoreDeadLinks: true,
   //fav图标
   // head: [
   //   ['link', { rel: 'icon', href: '/logo.png' }],

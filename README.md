@@ -26,7 +26,7 @@ pnpm install
 pnpm docs:dev
 ```
 
-启动本地开发服务器，通常在 http://localhost:5173 上访问。
+启动本地开发服务器（默认地址 `http://localhost:5173`）。
 
 ### 构建生产版本
 
