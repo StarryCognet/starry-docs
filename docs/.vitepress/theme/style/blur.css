@@ -1,0 +1,109 @@
+/* .vitepress/theme/style/blur.css */
+:root {
+  /* 首页导航 */
+  .VPNavBar {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
+
+  /* 文档页导航两侧 */
+  .VPNavBar:not(.home) {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
+
+  @media (min-width: 960px) {
+    /* 文档页导航两侧 */
+    .VPNavBar:not(.home) {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+    }
+
+    /* 首页下滑后导航两侧 */
+    .VPNavBar:not(.has-sidebar):not(.home.top) {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  @media (min-width: 960px) {
+    /* 文档页导航中间 */
+    .VPNavBar:not(.home.top) .content-body {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+    }
+
+    /* 首页下滑后导航中间 */
+    .VPNavBar:not(.has-sidebar):not(.home.top) .content-body {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  /* 分割线 */
+
+  @media (min-width: 960px) {
+    /* 文档页分割线 */
+    .VPNavBar:not(.home.top) .divider-line {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+    }
+
+    /* 首页分割线 */
+    .VPNavBar:not(.has-sidebar):not(.home.top) .divider {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  /* 搜索框 VPNavBarSearchButton.vue */
+  .DocSearch-Button {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
+
+  /* 移动端大纲栏 */
+  .VPLocalNav {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    /* 隐藏分割线 */
+    /* border-bottom: 5px solid var(--vp-c-gutter); */
+    border-bottom: 0px;
+  }
+}
+
+.VPDoc h1 {
+  background: linear-gradient(-45deg, #bd34fe, #41d1ff, #e43498, #41d1ff);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.vp-doc a {
+  text-decoration: none;
+}
+
+/* VPFeatures 页卡悬浮效果 */
+.VPFeatures .items .item .VPFeature {
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.VPFeatures .items .item .VPFeature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}

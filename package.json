@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@types/dom-view-transitions": "^1.0.6",
+    "@types/node": "^25.0.3",
+    "busuanzi.pure.js": "^1.0.3",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "@vue/runtime-core": "^3.5.25",
+    "medium-zoom": "^1.1.0",
+    "nprogress-v2": "^1.1.10",
+    "pagefind": "^1.4.0",
+    "vitepress": "2.0.0-alpha.15",
+    "vitepress-plugin-comment-with-giscus": "^1.1.15",
+    "vitepress-plugin-pagefind": "^0.4.17",
+    "vitepress-sidebar": "^1.33.1",
+    "vue": "^3.5.25"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}

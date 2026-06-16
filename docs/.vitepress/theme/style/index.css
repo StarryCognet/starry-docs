@@ -1,0 +1,20 @@
+/* index.css */
+@import "./var.css";
+@import "./blur.css";
+@import "./rainbow.css";
+@import "./hidden.css";
+
+/* 隐藏滚动条但保持滚动功能 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 兼容Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* 兼容IE和Edge */
+body {
+  -ms-overflow-style: none;
+}
