@@ -369,7 +369,7 @@ flowchart TD
 
 **3. 列表数据增删没反映**
 
-用的是普通 List<T> 而不是 ObservableCollection<T>。List 不会通知 UI 集合变了。
+用的是普通 `List<T>` 而不是 `ObservableCollection<T>`。List 不会通知 UI 集合变了。
 
 TubaTools 的代码里这三个坑都避开了：ToolItem 实现了 INotifyPropertyChanged，所有可变属性的 setter 都走 SetField，工具集合用的是 BulkObservableCollection。
 
